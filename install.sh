@@ -11,11 +11,11 @@ wget -q https://packages.microsoft.com/config/ubuntu/$VERSION_ID/packages-micros
 #(wget) sirve para descargar archivos desde servidores web. (-q) descarga silenciosamente, es decir, no muestra nada en la terminal. lo siquiente es la url. en resumen este codigo descarga el instalador del repositorio oficial de Microsoft a mi Ubuntu.
 
 sudo dpkg -i packages-microsoft-prod.deb
+#(dpkg) instala paquetes .deb manualmente. (-i) le dice a dpkg que voy a instalar a un archivo (packages-microsoft-prod.deb) es el archivo que descargue anteriormente con wget. en resumen este comando habilita a Ubuntu para descargar programas oficiales de Microsoft.
 
-# Delete the Microsoft repository keys file
 rm packages-microsoft-prod.deb
+# 
 
-# Update the list of packages after we added packages.microsoft.com
 sudo apt-get update
 
 ###################################
