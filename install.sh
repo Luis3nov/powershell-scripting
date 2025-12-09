@@ -14,13 +14,13 @@ sudo dpkg -i packages-microsoft-prod.deb
 #(dpkg) instala paquetes .deb manualmente. (-i) le dice a dpkg que voy a instalar a un archivo (packages-microsoft-prod.deb) es el archivo que descargue anteriormente con wget. en resumen este comando habilita a Ubuntu para descargar programas oficiales de Microsoft.
 
 rm packages-microsoft-prod.deb
-# 
+# este comando elimina el archivo llamado (packages-microsoft-prod.deb) del directorio donde estés ubicado
 
 sudo apt-get update
+#este comando actualiza la lista de programas disponibles para que pueda instalar versiones nuevas sin error
 
-###################################
-# Install PowerShell
 sudo apt-get install -y powershell
+#(-y) es un si automatico. este comando instala PowerShell en mi sistema Ubuntu
 
-# Start PowerShell
 pwsh
+#luego de haber instalado PowerShell, este comando es el que lo ejecuta en la terminal.
